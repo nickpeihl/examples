@@ -1,4 +1,4 @@
-const jsts = require("jsts");
+const jsts = require('jsts');
 
 module.exports = repairGeometry;
 
