@@ -1,0 +1,19 @@
+{
+  "name": "microsoft-buildings-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "Apache-2",
+  "dependencies": {
+    "@babel/cli": "^7.1.0",
+    "@babel/core": "^7.1.0",
+    "@babel/node": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "@elastic/elasticsearch": "^7.0.0-rc.2",
+    "jsts": "^2.0.4"
+  }
+}
