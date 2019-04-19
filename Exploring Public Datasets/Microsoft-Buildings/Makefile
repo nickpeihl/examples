@@ -21,7 +21,7 @@ $(OBJECTS): ## Download, clean, and stream into Elasticsearch
 	mkdir -p data
 	# Download the GeoJSON zip file if it doesn't already exist in `src`
 	curl -SL -C - https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/$@.zip -o data/$@.zip
-	# Convert the file to GeoJSON and use jq to convert each feature into a new line
+	# Convert the GeoJSON file into newline delimited features
 	ogr2ogr -f GeoJSONSeq data/$@.ndjson /vsizip/data/$@.zip
 	# Repair self-intersecting geometries that are not compatible with Elasticsearch and
 	# stream into Elasticsearch
